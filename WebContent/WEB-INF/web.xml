@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MCG_Photo</display-name>
+  <welcome-file-list>   
+    <welcome-file>uploads.jsp</welcome-file>
+  </welcome-file-list>
+
+  
+    <!-- 2017-9-19 -->
+  <servlet>
+    <servlet-name>ShowPhotoesByNameServlet</servlet-name>
+    <servlet-class>com.mcg.vm.servlet.ShowPhotoesByNameServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowPhotoesByNameServlet</servlet-name>
+    <url-pattern>/servlet/ShowPhotoesByNameServlet</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>60</session-timeout>
+  </session-config>
+  
+</web-app>
